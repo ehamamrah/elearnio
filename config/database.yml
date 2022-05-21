@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: 127.0.0.1
+  username: postgres
+  password: testing_pass
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+  <<: *default
+  database: elearnio_development
+test:
+  <<: *default
+  database: elearnio_test
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>

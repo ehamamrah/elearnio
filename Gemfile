@@ -65,3 +65,4 @@ end
 gem 'jsonapi-resources'
 gem 'rack-cors'
 gem 'devise'
+gem 'faker'

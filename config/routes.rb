@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       end
 
       jsonapi_resources :course_enrollements, only: %i[create update destroy]
+      jsonapi_resources :users
     end
   end
 end

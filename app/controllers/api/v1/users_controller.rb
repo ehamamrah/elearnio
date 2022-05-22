@@ -14,7 +14,11 @@ module Api
               handle_json_error
             end
           else
-            handle_json_error
+            if !@user.courses.any?
+              @user.destroy
+            else
+              handle_json_error
+            end
           end
         end
 

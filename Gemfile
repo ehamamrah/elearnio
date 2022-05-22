@@ -66,3 +66,10 @@ gem 'jsonapi-resources'
 gem 'rack-cors'
 gem 'devise'
 gem 'faker'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0.rc1'
+  gem 'shoulda-matchers', '4.0.0.rc1'
+  gem 'factory_bot_rails'
+  # gem 'jsonapi-resources-matchers'
+end

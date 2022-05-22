@@ -1,24 +1,18 @@
-# README
+# Edtech API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Stack
+* Ruby 3.1.1
+* Rails 7.0.2.3
+* Docker
+* PostgreSQL
 
-Things you may want to cover:
+## Run the project
+* Go to directory of the project
+* Run ```make image``` to build the image
+* Generate .env file and add ```POSTGRES_PASSWORD``` to it.
+* Run Server & DB Container using command ```make services``` or ```make services-d``` to run it background
+* Run ```make create-db``` to create the database
+* To run any migrations use ```make migrate-db```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Seed Data
+* Run ```make seed``` and it will run to seed the DB
